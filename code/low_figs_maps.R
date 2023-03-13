@@ -12,8 +12,8 @@ library(httpgd)
 library(tidyverse)
 
 # AEZ -----
-MXmap <- readOGR(dsn = 'output/MXmap_AEZ18',
-                 layer = 'MXmap_AEZ18')
+MXmap <- readOGR(dsn = 'output/MXmap_AEZ18_V11',
+                 layer = 'MXmap_AEZ18_V11')
 MXmap@data$id <- as.character(0:(length(MXmap@data$AEZ_id) - 1))
 MXmap_df <- MXmap@data
 
@@ -64,6 +64,7 @@ ggplot() +
 hgd()
 hgd_browse()
 
+MXmap_tb$AEZ_id <- as.character(MXmap_tb$AEZ_id)
 ggplot() + 
   # AEZ
   geom_polygon(data = MXmap_tb,
