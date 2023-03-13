@@ -8,7 +8,7 @@ You can also refer to our division of the United States [here](https://github.co
 
 If using this shapefile, please cite:
 
-**TBD**
+Nava, N J, J Beckman, and M Ivanic. 2023. "Estimating the Market Implications from Climate-induced Corn and Soybean Yield Changes for the U.S." *Forthcoming as Economics Research Report*
 
 The following is a quick description of the codes:
 
